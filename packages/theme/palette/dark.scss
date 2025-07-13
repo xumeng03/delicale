@@ -1,0 +1,213 @@
+body[theme-mode="dark"] {
+  --black: 0, 0, 0;
+  --white: 255, 255, 255;
+  --amber-0: 81, 46, 9;
+  --amber-1: 121, 75, 15;
+  --amber-2: 161, 107, 22;
+  --amber-3: 202, 143, 30;
+  --amber-4: 242, 183, 38;
+  --amber-5: 245, 202, 80;
+  --amber-6: 247, 219, 122;
+  --amber-7: 250, 234, 166;
+  --amber-8: 252, 246, 210;
+  --amber-9: 254, 251, 237;
+  --blue-0: 5, 49, 112;
+  --blue-1: 10, 70, 148;
+  --blue-2: 19, 92, 184;
+  --blue-3: 29, 117, 219;
+  --blue-4: 41, 144, 255;
+  --blue-5: 84, 169, 255;
+  --blue-6: 127, 193, 255;
+  --blue-7: 169, 215, 255;
+  --blue-8: 212, 236, 255;
+  --blue-9: 239, 248, 255;
+  --cyan-0: 4, 52, 61;
+  --cyan-1: 7, 79, 92;
+  --cyan-2: 10, 108, 123;
+  --cyan-3: 14, 137, 153;
+  --cyan-4: 19, 168, 184;
+  --cyan-5: 56, 187, 198;
+  --cyan-6: 98, 205, 212;
+  --cyan-7: 145, 223, 227;
+  --cyan-8: 198, 239, 241;
+  --cyan-9: 231, 247, 248;
+  --green-0: 18, 60, 25;
+  --green-1: 28, 90, 37;
+  --green-2: 39, 119, 49;
+  --green-3: 50, 149, 61;
+  --green-4: 62, 179, 73;
+  --green-5: 93, 194, 100;
+  --green-6: 127, 209, 132;
+  --green-7: 166, 225, 168;
+  --green-8: 208, 240, 209;
+  --green-9: 236, 247, 236;
+  --grey-0: 28, 31, 35;
+  --grey-1: 46, 50, 56;
+  --grey-2: 65, 70, 76;
+  --grey-3: 85, 91, 97;
+  --grey-4: 107, 112, 117;
+  --grey-5: 136, 141, 146;
+  --grey-6: 167, 171, 176;
+  --grey-7: 198, 202, 205;
+  --grey-8: 230, 232, 234;
+  --grey-9: 249, 249, 249;
+  --indigo-0: 23, 30, 101;
+  --indigo-1: 32, 41, 122;
+  --indigo-2: 41, 54, 142;
+  --indigo-3: 52, 68, 163;
+  --indigo-4: 64, 83, 183;
+  --indigo-5: 95, 113, 197;
+  --indigo-6: 129, 145, 212;
+  --indigo-7: 167, 180, 226;
+  --indigo-8: 209, 216, 241;
+  --indigo-9: 237, 239, 248;
+  --light-blue-0: 0, 55, 97;
+  --light-blue-1: 0, 77, 133;
+  --light-blue-2: 3, 102, 169;
+  --light-blue-3: 10, 129, 204;
+  --light-blue-4: 19, 159, 240;
+  --light-blue-5: 64, 180, 243;
+  --light-blue-6: 110, 200, 246;
+  --light-blue-7: 157, 220, 249;
+  --light-blue-8: 206, 238, 252;
+  --light-blue-9: 235, 248, 254;
+  --light-green-0: 38, 61, 19;
+  --light-green-1: 59, 92, 29;
+  --light-green-2: 81, 123, 40;
+  --light-green-3: 103, 153, 52;
+  --light-green-4: 127, 184, 64;
+  --light-green-5: 151, 198, 95;
+  --light-green-6: 176, 212, 129;
+  --light-green-7: 201, 227, 167;
+  --light-green-8: 228, 241, 209;
+  --light-green-9: 243, 248, 237;
+  --lime-0: 49, 70, 3;
+  --lime-1: 75, 105, 5;
+  --lime-2: 103, 141, 9;
+  --lime-3: 132, 176, 12;
+  --lime-4: 162, 211, 17;
+  --lime-5: 174, 220, 58;
+  --lime-6: 189, 229, 102;
+  --lime-7: 207, 237, 150;
+  --lime-8: 229, 246, 201;
+  --lime-9: 243, 251, 233;
+  --orange-0: 85, 31, 3;
+  --orange-1: 128, 53, 6;
+  --orange-2: 170, 80, 10;
+  --orange-3: 213, 111, 15;
+  --orange-4: 255, 146, 20;
+  --orange-5: 255, 174, 67;
+  --orange-6: 255, 199, 114;
+  --orange-7: 255, 221, 161;
+  --orange-8: 255, 239, 208;
+  --orange-9: 255, 249, 237;
+  --pink-0: 92, 7, 48;
+  --pink-1: 128, 14, 65;
+  --pink-2: 164, 23, 81;
+  --pink-3: 199, 34, 97;
+  --pink-4: 235, 47, 113;
+  --pink-5: 239, 86, 134;
+  --pink-6: 243, 126, 159;
+  --pink-7: 247, 168, 188;
+  --pink-8: 251, 211, 220;
+  --pink-9: 253, 238, 241;
+  --purple-0: 74, 16, 97;
+  --purple-1: 94, 23, 118;
+  --purple-2: 115, 31, 138;
+  --purple-3: 137, 40, 159;
+  --purple-4: 160, 51, 179;
+  --purple-5: 181, 83, 194;
+  --purple-6: 202, 120, 209;
+  --purple-7: 221, 160, 225;
+  --purple-8: 239, 206, 240;
+  --purple-9: 247, 235, 247;
+  --red-0: 108, 9, 11;
+  --red-1: 144, 17, 16;
+  --red-2: 180, 32, 25;
+  --red-3: 215, 51, 36;
+  --red-4: 251, 73, 50;
+  --red-5: 252, 114, 90;
+  --red-6: 253, 153, 131;
+  --red-7: 253, 190, 172;
+  --red-8: 254, 224, 213;
+  --red-9: 255, 243, 239;
+  --teal-0: 2, 60, 57;
+  --teal-1: 4, 90, 85;
+  --teal-2: 7, 119, 111;
+  --teal-3: 10, 149, 136;
+  --teal-4: 14, 179, 161;
+  --teal-5: 51, 194, 176;
+  --teal-6: 94, 209, 193;
+  --teal-7: 142, 225, 211;
+  --teal-8: 196, 240, 232;
+  --teal-9: 230, 247, 244;
+  --violet-0: 64, 27, 119;
+  --violet-1: 76, 36, 140;
+  --violet-2: 88, 46, 160;
+  --violet-3: 100, 57, 181;
+  --violet-4: 114, 70, 201;
+  --violet-5: 136, 101, 212;
+  --violet-6: 162, 136, 223;
+  --violet-7: 190, 173, 233;
+  --violet-8: 221, 212, 244;
+  --violet-9: 241, 238, 250;
+  --yellow-0: 84, 73, 3;
+  --yellow-1: 126, 108, 6;
+  --yellow-2: 168, 142, 10;
+  --yellow-3: 210, 175, 15;
+  --yellow-4: 252, 206, 20;
+  --yellow-5: 253, 222, 67;
+  --yellow-6: 253, 235, 113;
+  --yellow-7: 254, 245, 160;
+  --yellow-8: 254, 251, 208;
+  --yellow-9: 255, 254, 236;
+
+  --color-primary: rgba(var(--blue-5), 1); // 主要颜色。仅在需要非常强调的情况下使用。
+  --color-primary-hover: rgba(var(--blue-6), 1); // 主要颜色悬浮态
+  --color-primary-active: rgba(var(--blue-7), 1); // 主要颜色激活态
+  --color-primary-disabled: rgba(var(--blue-2), 1); // 主要颜色禁用态
+  --color-primary-light-default: rgba(var(--blue-5), .2); // 浅版主要颜色（多用于背景）。仅在需要非常强调的情况下使用。
+  --color-primary-light-hover: rgba(var(--blue-5), .3); // 浅版主要颜色悬浮态
+  --color-primary-light-active: rgba(var(--blue-5), .4); // 浅版主要颜色激活态
+
+  --color-secondary: rgba(var(--light-blue-5), 1); // 次要颜色。强调作用次于主要颜色，但仍然具有强调作用。
+  --color-secondary-hover: rgba(var(--light-blue-6), 1); // 次要颜色悬浮态
+  --color-secondary-active: rgba(var(--light-blue-7), 1); // 次要颜色激活态
+  --color-secondary-disabled: rgba(var(--light-blue-2), 1); // 次要颜色禁用态
+  --color-secondary-light-default: rgba(var(--light-blue-5), .2); // 浅版次要颜色（多用于背景）。强调作用次于主要颜色，但仍然具有强调作用。
+  --color-secondary-light-hover: rgba(var(--light-blue-5), .3); // 浅版次要颜色悬浮态
+  --color-secondary-light-active: rgba(var(--light-blue-5), .4); // 浅版次要颜色激活态
+
+  --color-tertiary: rgba(var(--grey-5), 1); // 第三颜色，可以在页面上多次使用
+  --color-tertiary-hover: rgba(var(--grey-6), 1); // 第三颜色悬浮态
+  --color-tertiary-active: rgba(var(--grey-7), 1); // 第三颜色激活态
+  --color-tertiary-light-default: rgba(var(--grey-5), .2); // 浅版第三颜色（多用于背景），可以在页面上多次使用
+  --color-tertiary-light-hover: rgba(var(--grey-5), .3); // 浅版第三颜色悬浮态
+  --color-tertiary-light-active: rgba(var(--grey-5), .4); // 浅版第三颜色激活态
+
+  --color-warning: rgba(var(--orange-5), 1); // 警示色，表示警告、不安全的状态
+  --color-warning-hover: rgba(var(--orange-6), 1); // 警示色悬浮态
+  --color-warning-active: rgba(var(--orange-7), 1); // 警示色激活态
+  --color-warning-light-default: rgba(var(--orange-5), .2); // 浅版警示色（多用于背景），表示警告、不安全的状态
+  --color-warning-light-hover: rgba(var(--orange-5), .3); // 浅版警示色悬浮态
+  --color-warning-light-active: rgba(var(--orange-5), .4); // 浅版警示色激活态
+
+  --color-danger: rgba(var(--red-5), 1); // 危险色，表示危险的操作、或需要特别注意的危险信息
+  --color-danger-hover: rgba(var(--red-6), 1); // 危险色悬浮态
+  --color-danger-active: rgba(var(--red-7), 1); // 危险色激活态
+  --color-danger-light-default: rgba(var(--red-5), .2); // 浅版危险色（多用于背景），表示危险的操作、或需要特别注意的危险信息
+  --color-danger-light-hover: rgba(var(--red-5), .3); // 浅版危险色悬浮态
+  --color-danger-light-active: rgba(var(--red-5), .4); // 浅版危险色激活态
+
+  --color-success: rgba(var(--green-5), 1); // 成功色，表示安全、成功、开启的状态
+  --color-success-hover: rgba(var(--green-6), 1); // 成功色悬浮态
+  --color-success-active: rgba(var(--green-7), 1); // 成功色激活态
+  --color-success-disabled: rgba(var(--green-2), 1); // 成功色禁用态
+  --color-success-light-default: rgba(var(--green-5), .2); // 浅版成功色（多用于背景），表示安全、成功、开启的状态
+  --color-success-light-hover: rgba(var(--green-5), .3); // 浅版成功色悬浮态
+  --color-success-light-active: rgba(var(--green-5), .4); // 浅版成功色激活态
+
+  --color-fill-0: rgba(var(--white), .12); // 填充色 - 默认态
+  --color-fill-1: rgba(var(--white), .16); // 填充色 - 悬浮态
+  --color-fill-2: rgba(var(--white), .20); // 填充色 - 激活态
+}

@@ -1,0 +1,7 @@
+packages:
+  # 组件库目录
+  - "packages/*"
+  # 组件库文档目录
+  - "docs"
+  # 演示目录
+  - "play"

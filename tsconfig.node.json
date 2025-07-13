@@ -1,0 +1,21 @@
+{
+  // 基于 @tsconfig/node18 包基本配置文件扩展
+  "extends": "@tsconfig/node18/tsconfig.json",
+  // 定义 TypeScript 编译器的具体选项
+  "compilerOptions": {
+    // 启用增量编译
+    "composite": true,
+    // 使用最新的 ECMAScript 模块
+    "module": "ESNext",
+    // 打包器的模块解析策略
+    "moduleResolution": "Bundler",
+    // 包含的类型定义，将 Node.js 的类型定义包含到编译中
+    "types": [
+      "node"
+    ]
+  },
+  // 编译目录
+  "include": [
+    "packages/**/**.config.ts"
+  ]
+}

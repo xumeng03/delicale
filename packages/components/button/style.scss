@@ -1,0 +1,73 @@
+@use "sass:map";
+@use "sass:meta";
+@use "../variables";
+
+$module: #{variables.$prefix}-button;
+
+@mixin button-style($theme: 'none', $type: 'primary') {
+  // 基础按钮样式
+  color: var(--button-#{$theme}-#{$type}-color);
+  background-color: var(--button-#{$theme}-#{$type}-background-color);
+
+  // 悬停状态
+  &:hover:not(.#{$module}-disabled) {
+    background-color: var(--button-#{$theme}-#{$type}-background-color-hover);
+  }
+
+  // 激活状态
+  &:active:not(.#{$module}-disabled) {
+    background-color: var(--button-#{$theme}-#{$type}-background-color-active);
+  }
+
+  // 禁用状态
+  &.#{$module}-disabled {
+    cursor: not-allowed;
+    color: var(--button-#{$theme}-color-disabled);
+    background-color: var(--button-#{$theme}-background-color-disabled);
+  }
+}
+
+// 基础按钮样式
+.#{$module} {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--button-radius);
+  font-weight: var(--button-font-weight);
+  vertical-align: middle;
+  white-space: nowrap;
+  border: variables.$none;
+  outline: variables.$none;
+  box-shadow: variables.$none;
+  user-select: variables.$none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  // size
+  $button-sizes: ('small', 'medium', 'large');
+  @each $size, $config in $button-sizes {
+    &-#{$size} {
+      height: var(--button-height-#{$size});
+      padding: var(--button-padding-td-#{$size}) var(--button-padding-lr-#{$size});
+      font-size: var(--button-font-size-#{$size});
+    }
+  }
+
+  // theme + type
+  $button-themes: ('none', 'light', 'dark');
+  $button-types: ("primary", "secondary", "tertiary", "warning", "danger", "success");
+  @each $theme in $button-themes {
+    &-#{$theme} {
+      @each $type in $button-types {
+        &.#{$module}-#{$type} {
+          @include button-style($theme, $type);
+        }
+      }
+    }
+  }
+
+  // block
+  &-block {
+    width: 100%;
+  }
+}

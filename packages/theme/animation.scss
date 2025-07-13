@@ -1,0 +1,63 @@
+$transition: (
+        duration: (
+                slowest: 1000ms,
+                slower: 700ms,
+                slow: 500ms,
+                normal: 300ms,
+                fast: 200ms,
+                faster: 150ms,
+                fastest: 100ms,
+                none: 0ms
+        ),
+        function: (
+                linear: linear,
+                ease: ease,
+                easeIn: ease-in,
+                easeOut: ease-out,
+                easeInIOut: ease-in-out
+        ),
+        delay: (
+                none: 0ms,
+                slowest: 500ms,
+                slower: 350ms,
+                slow: 250ms,
+                normal: 150ms,
+                fast: 100ms,
+                faster: 75ms,
+                fastest: 50ms
+        )
+);
+
+$transform: (
+        scale: (
+                none: scale(1, 1),
+                small: scale(1.05, 1.05),
+                medium: scale(1.1, 1.1),
+                large: scale(1.2, 1.2)
+        ),
+        rotate: (
+                none: rotate(0deg),
+                clockwise90deg: rotate(90deg),
+                clockwise180deg: rotate(180deg),
+                clockwise270deg: rotate(270deg),
+                clockwise360deg: rotate(360deg),
+                anticlockwise90deg: rotate(-90deg),
+                anticlockwise180deg: rotate(-180deg),
+                anticlockwise270deg: rotate(-270deg),
+                anticlockwise360deg: rotate(-360deg)
+        )
+);
+
+body {
+  @each $transition-key, $transition-values in $transition {
+    @each $name, $value in $transition-values {
+      --transition_#{$transition-key}-#{$name}: #{$value};
+    }
+  }
+
+  @each $transform-key, $transform-values in $transform {
+    @each $name, $value in $transform-values {
+      --transition_#{$transform-key}-#{$name}: #{$value};
+    }
+  }
+}
