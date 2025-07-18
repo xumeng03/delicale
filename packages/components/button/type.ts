@@ -1,13 +1,13 @@
 import type {PropType} from "vue";
 
+export const ButtonName = 'd-button'
+
 const theme = ["none", "light", "dark"] as const;
 const shape = ["radius"] as const;
 const type = ["primary", "secondary", "tertiary", "warning", "danger", "success"] as const;
 const size = ["small", "medium", "large"] as const;
 const display = ["inline", "block"] as const;
 const status = ["normal", "disabled"] as const;
-
-export const ButtonName = 'd-button'
 
 export const ButtonProps = {
     theme: {

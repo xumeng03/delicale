@@ -50,7 +50,22 @@ import HelloWorld from './components/HelloWorld.vue'
   <d-button theme="dark" type="danger" status="disabled">危险按钮</d-button>
   <d-button theme="dark" type="success" status="disabled">危险按钮</d-button>
   <br>
-  <d-button theme="dark" type="primary" display="block" @click="()=>{console.log('hello button click!')}">主要按钮</d-button>
+  <d-button theme="dark" type="primary" display="block" @click="()=>{console.log('hello button click!')}">主要按钮
+  </d-button>
+  <br>
+  <d-icon></d-icon>
+  <d-icon name="alert"></d-icon>
+  <d-icon name="bell"></d-icon>
+  <d-icon name="bookmark"></d-icon>
+  <d-icon name="calendar"></d-icon>
+  <d-icon name="camera"></d-icon>
+  <d-icon name="cart"></d-icon>
+  <d-icon name="clock"></d-icon>
+  <d-icon name="close"></d-icon>
+  <d-icon name="cloud"></d-icon>
+  <d-icon name="comment"></d-icon>
+  <d-icon name="copy"></d-icon>
+  <d-icon name="spin" spin></d-icon>
 </template>
 
 <style>

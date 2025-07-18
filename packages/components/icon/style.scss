@@ -1,0 +1,30 @@
+@use "../variables";
+
+$module: #{variables.$prefix}-icon;
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.#{$module} {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+
+  &-spin {
+    animation: icon-spin 1s infinite linear;
+  }
+
+  svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+  }
+}
